@@ -12,8 +12,8 @@
             background: wheat;
         }
         input[type='radio']:after {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         border-radius: 15px;
         top: -2px;
         left: -1px;
@@ -26,8 +26,8 @@
     }
 
     input[type='radio']:checked:after {
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
         border-radius: 15px;
         top: -2px;
         left: -1px;
@@ -60,6 +60,15 @@
             <input type="text" placeholder="Enter your name"></p>
         <p><label for="">Email</label>
             <input type="Email" placeholder="Enter your Email"></p>
+            <!-- fieldset and letgend tags radio attribute-->
+            <fieldset>
+                <legend>location</legend>
+                <p><label for="golshan"><input type="radio" name="location" id="golshan">golshan</label></p>
+                <p><label for="golshan"><input type="radio" name="location" id="golshan">danmondi</label></p>
+                <p><label for="golshan"><input type="radio" name="location" id="golshan">mirpur</label></p>
+            </fieldset>
+
+
         <fieldset>
             <legend>select your pitha</legend>
             <p><label for="chitoy">
@@ -72,6 +81,7 @@
                 <input type="radio" name="chitoy" id="tell">
             teler pitha</label></p>
         </fieldset>
+        <!-- checkbox -->
         <fieldset>
             <legend>Select you borta</legend>
             <p><label for="shotki"><input type="checkbox" name="vorta" id="shotki">shotki borta</label></p>
@@ -81,6 +91,13 @@
         <p>special instration
             <br>
         <textarea name="instruction" id="" cols="50" rows="10"></textarea></p>
+        <!-- select option tag -->
+        <p>phone: <select name="" id="phone">
+            <option value="">please selete number</option>
+            <option value="bangladesh">+088</option>
+            <option value="india">+099</option>
+            <option value="pakistan">+078</option>
+        </select><input type="phone"></p>
         <button type="submit">submit</button>
         <button type="reset">reset</button>
     </form>
