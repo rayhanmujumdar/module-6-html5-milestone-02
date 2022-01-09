@@ -1,0 +1,46 @@
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+nav li a:hover{
+    background-color: gray;
+    color: white;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li:hover ul{
+    display: block;
+}
+.inter-dropdown{
+    position: absolute;
+    background: red;
+    margin: 0;
+    padding: 0;
+    left: 90px;
+    top: 30px;
+    display: none;
+}
+.inter-dropdown li{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+.inter-dropdown:hover{
+    display: block;
+}
